@@ -1,7 +1,7 @@
 import { Row, Col, Card } from "react-bootstrap";
 
 
-export function MovieCards({ movies })  {
+export const MovieCards = ({ movies }) => {
     if (!movies || movies.length <= 0) {
         return (<h3>No movies to show.</h3>);
     }

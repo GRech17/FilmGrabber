@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 import {Trending} from './pages/Trending';
+import {Movie} from './pages/Movie';
+
 
 
 const client = new ApolloClient({
@@ -25,7 +27,7 @@ function App() {
         <>
           <Switch>
             <Route exact path="/" component={Trending} />
-            {/* <h1>-Test</h1> */}
+            <Route exact path="/movies/:id" component={Movie} />
 
           </Switch>
         </>
