@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
+import {Trending} from './pages/Trending';
 
 
 const client = new ApolloClient({
@@ -23,10 +24,11 @@ function App() {
       <Router>
         <>
           <Switch>
-            <h1>-Test</h1>
+            <Route exact path="/" component={Trending} />
+            {/* <h1>-Test</h1> */}
 
           </Switch>
-        </>  
+        </>
       </Router>
     </ApolloProvider>
   );
