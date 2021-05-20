@@ -20,6 +20,29 @@ export const Trending = () => {
         {movies && movies.map((movie) => {
             return <h3 key={movie.id}>{movie.title}</h3>
         })}
+
+
+        {/* <Container>
+            <Row>
+                <Col>
+                    <h3>Trending</h3>
+                </Col>
+            </Row>
+            <Row>
+                {movies && movies.map((movie) => {
+                    <Col md="4" className="mb-2">
+                        <Card>
+                            <Card.Img variant="top" key={movie.id} src={movie.poster_path}
+                            // <Card.Body>
+                            //     <Card.Title>{movie.title}</Card.Title>
+                            // </Card.Body>
+                            
+                        </Card>
+                    </Col>
+
+            </Row>
+        </Container> */}
+
         </>
     )
 }
