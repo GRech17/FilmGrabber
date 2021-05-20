@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/react-hooks';
+import Navbar from './components/Navbar';
 import ApolloClient from 'apollo-boost';
 import {Trending} from './pages/Trending';
 import {Movie} from './pages/Movie';
@@ -25,6 +26,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <>
+        <Navbar />
           <Switch>
             <Route exact path="/" component={Trending} />
             <Route exact path="/movies/:id" component={Movie} />
