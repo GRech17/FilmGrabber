@@ -4,7 +4,9 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import Navbar from './components/Navbar';
 import ApolloClient from 'apollo-boost';
 import {Trending} from './pages/Trending';
+import {Movie} from './pages/Movie';
 
+import "./App.css";
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -27,7 +29,7 @@ function App() {
         <Navbar />
           <Switch>
             <Route exact path="/" component={Trending} />
-            {/* <h1>-Test</h1> */}
+            <Route exact path="/movies/:id" component={Movie} />
 
           </Switch>
         </>
