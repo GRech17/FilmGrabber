@@ -6,7 +6,7 @@ import ApolloClient from 'apollo-boost';
 import {Trending} from './pages/Trending';
 import {Movie} from './pages/Movie';
 
-
+import "./App.css";
 
 const client = new ApolloClient({
   request: (operation) => {

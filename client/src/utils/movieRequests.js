@@ -1,6 +1,7 @@
 const baseUrl = "https://api.themoviedb.org/3/"
 const trendingPath = "trending/movie/week";
-const movieDetailPath = "movie/"
+
+export const movieDetailPath = "movie/"
 
 const getUrl = (path) => {
     return `${baseUrl}${path}?api_key=be7a826a76009582fd9bfd917bb48f21`
