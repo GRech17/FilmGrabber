@@ -1,0 +1,49 @@
+.float-containter {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0rem;
+    
+}
+
+
+.card {
+    width: 100%;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.overview {
+    width: 58%;
+    float: right;
+    padding: 3rem 1rem;
+    padding-right: 6rem;
+    
+}
+
+#overview-text {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    font-style:normal;
+    font-weight: bold;
+}
+
