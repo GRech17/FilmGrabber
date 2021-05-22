@@ -4,7 +4,7 @@ import {useQuery, useMutation} from '@apollo/react-hooks';
 import {QUERY_ME} from '../utils/queries';
 import {REMOVE_MOVIE} from '../utils/mutations';
 import Auth from '../utils/auth';
-import {removeMovieId} from '../utils/localStorage';
+// import {removeMovieId} from '../utils/localStorage';
 import { MovieCards } from "../components/MovieCards";
 
 const SavedMovies = () => {
