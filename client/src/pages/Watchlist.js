@@ -55,7 +55,7 @@ const SavedMovies = () => {
             </h2>
             <CardColumns>
                 {userData.savedMovies?.map((movie) => {
-                    return (
+                    return (<></>
                         // <Card key={movie.movieId} border='dark'>
                         //     {movie.image ? (
                         //         <Card.Img src={movie.image} alt={`The poster for ${movie.title}`} varient='top' />
@@ -66,7 +66,7 @@ const SavedMovies = () => {
                         //         onClick={() => handleDeleteMovie(movie.movieId)}>Remove movie</Button>
                         //     </Card.body>
                         // </Card>
-                        <MovieCards movies={movies}></MovieCards>  
+                        // <MovieCards movies={movies}></MovieCards>  
                     );
                 })}
             </CardColumns>
