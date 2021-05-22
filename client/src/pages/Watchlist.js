@@ -1,11 +1,11 @@
 import React from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button} from 'react-bootstrap';
-
 import {useQuery, useMutation} from '@apollo/react-hooks';
 import {QUERY_ME} from '../utils/queries';
 import {REMOVE_MOVIE} from '../utils/mutations';
 import Auth from '../utils/auth';
 import {removeMovieId} from '../utils/localStorage';
+import { MovieCards } from "../components/MovieCards";
 
 const SavedMovies = () => {
     const {loading, data} = useQuery(QUERY_ME);
@@ -56,12 +56,24 @@ const SavedMovies = () => {
             <CardColumns>
                 {userData.savedMovies?.map((movie) => {
                     return (
-                        <Card key={movie.movieId} border='dark'>
-                    )
+                        // <Card key={movie.movieId} border='dark'>
+                        //     {movie.image ? (
+                        //         <Card.Img src={movie.image} alt={`The poster for ${movie.title}`} varient='top' />
+                        //     ) : null}
+                        //     <Card.body>
+                        //         <Card.Title>{movie.title}</Card.Title>
+                        //         <Button className='btn-block btn-danger'
+                        //         onClick={() => handleDeleteMovie(movie.movieId)}>Remove movie</Button>
+                        //     </Card.body>
+                        // </Card>
+                        <MovieCards movies={movies}></MovieCards>  
+                    );
                 })}
             </CardColumns>
+            
         </Container>
-    )
-    
-    }
-}
+       </> 
+    );
+};
+
+export default SavedMovies;    
