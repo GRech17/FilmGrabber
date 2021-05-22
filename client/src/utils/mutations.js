@@ -47,4 +47,4 @@ mutation removeMovie($movieId: ID!) {
             image
         }
     }
-}`;    
+}`;     

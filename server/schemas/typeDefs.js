@@ -7,43 +7,11 @@ type Mutation {
     saveMovie(movieData: MovieInput!): User
     removeMovie(movieId: ID!): User
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin
 type User {
     _id: ID!
     username: String!
     email: String
     movieCount: Int
-<<<<<<< HEAD
-    savedMovie: [Movie]
-}
-type Movie {
-    movieId: ID!
-    authors: [String]
-    description: String
-    image: String
-    link: String
-    title: String!
-  }
-input MovieInput {
-    authors: [String]
-    description: String!
-    moiveId: String!
-    image: String
-    link: String
-    title: String!
-}
-type Query {
-    me: User
-}
-type Auth {
-    token: ID!
-    user: User
-  
-}`
-=======
     savedMovies: [Movie]
 }
 
@@ -73,6 +41,5 @@ type Auth {
     user: User
 }`;
 
->>>>>>> origin
 
 module.exports = typeDefs;
