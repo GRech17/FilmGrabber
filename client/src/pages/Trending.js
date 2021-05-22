@@ -1,25 +1,32 @@
 import { useState, useEffect } from 'react';
+import { Container, Row, Col } from "react-bootstrap";
+
+import { MovieCards } from "../components/MovieCards";
+import { getTrending } from "../utils/movieRequests";
+
 
 export const Trending = () => {
-    const url = "https://api.themoviedb.org/3/trending/movie/week?api_key=be7a826a76009582fd9bfd917bb48f21";
-
     const [movies, setMovies] = useState([]);
 
-    useEffect(async () => {
-        const res = await (await fetch(url)).json();
-
-        console.log('Res: ', movies, res);
-
-        setMovies(res.results);
-    }, []);
+    useEffect(() => {
+        const fetchMovies = async () => {
+            setMovies(await getTrending());
+        }
+        
+        fetchMovies();
+    }, [setMovies]);
 
     return (
         <>
-        <h1>Trending</h1>
+            <Container>
+                <Row>
+                    <Col>
+                        <h3>Trending</h3>
+                    </Col>
+                </Row>
 
-        {movies && movies.map((movie) => {
-            return <h3 key={movie.id}>{movie.title}</h3>
-        })}
+                <MovieCards movies={movies}></MovieCards>
+            </Container>
         </>
     )
 }
