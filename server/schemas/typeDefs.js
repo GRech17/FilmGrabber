@@ -1,9 +1,11 @@
 const {gql} = require('apollo-server-express');
 
 const typeDefs = gql`
+
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
+
     saveMovie(movieData: MovieInput!): User
     removeMovie(movieId: ID!): User
 }
@@ -38,6 +40,7 @@ type Auth {
 
 
 module.exports = typeDefs;
+<<<<<<< HEAD
 
 
 
@@ -84,3 +87,5 @@ module.exports = typeDefs;
 // }`;
 
 // module.exports = typeDefs;
+=======
+>>>>>>> main

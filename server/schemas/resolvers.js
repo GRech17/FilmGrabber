@@ -79,6 +79,7 @@ const resolvers = {
 };
 
 module.exports = resolvers;
+<<<<<<< HEAD
 
 
 
@@ -88,3 +89,5 @@ module.exports = resolvers;
 
 
 
+=======
+>>>>>>> main

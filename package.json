@@ -6,7 +6,11 @@
   "dependencies": {
     "graphql": "^15.5.0",
     "if-env": "^1.0.4",
+<<<<<<< HEAD
     "watch": "^1.0.2"
+=======
+    "mongoose": "^5.12.10"
+>>>>>>> main
   },
   "devDependencies": {
     "concurrently": "^6.1.0"
