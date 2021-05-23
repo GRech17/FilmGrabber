@@ -14,28 +14,23 @@ type User {
     movieCount: Int
     savedMovies: [Movie]
 }
-
 type Movie {
     movieId: ID!
     overview: String
     image: String
     title: String!
 }
-
 input MovieInput {
     movieId: String
     image: String
     title: String!
-
 }
-
 type Query {
     me: User
     users: [User]
     user(username: String!): User
     
 }
-
 type Auth {
     token: ID!
     user: User
@@ -43,3 +38,49 @@ type Auth {
 
 
 module.exports = typeDefs;
+
+
+
+// email:String!
+// }
+// type Mutation {
+//     login(email: String!, password: String!): Auth
+//     addUser(addUserInput: AddUserInput): User
+//     saveMovie(movieData: MovieInput!): User
+//     removeMovie(movieId: ID!): User
+// }
+// type User {
+//     _id: ID!
+//     username: String!
+//     email: String
+//     movieCount: Int
+//     savedMovies: [Movie]
+// }
+
+// type Movie {
+//     movieId: ID!
+//     overview: String
+//     image: String
+//     title: String!
+// }
+
+// input MovieInput {
+//     movieId: String
+//     image: String
+//     title: String!
+
+// }
+
+// type Query {
+//     me: User
+//     users: [User]
+//     user(username: String!): User
+    
+// }
+
+// type Auth {
+//     token: ID!
+//     user: User
+// }`;
+
+// module.exports = typeDefs;

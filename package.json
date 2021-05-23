@@ -5,7 +5,8 @@
   "main": "server/server.js",
   "dependencies": {
     "graphql": "^15.5.0",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "watch": "^1.0.2"
   },
   "devDependencies": {
     "concurrently": "^6.1.0"
