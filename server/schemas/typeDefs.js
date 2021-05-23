@@ -32,7 +32,7 @@ type Query {
     
 }
 type Auth {
-    token: ID!
+    signToken: ID
     user: User
 }`;
 

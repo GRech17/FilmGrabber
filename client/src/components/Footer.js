@@ -5,9 +5,9 @@ function Footer() {
     return (
        
     
-        <div class="page-footer font-small cyan darken-3">
+        <div className="page-footer font-small cyan darken-3">
 
-        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <div className="footer-copyright text-center py-3">© 2021 Copyright:
           <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
         </div>
      
