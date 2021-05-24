@@ -8,7 +8,7 @@ const getUrl = (path) => {
     return `${baseUrl}${path}?api_key=be7a826a76009582fd9bfd917bb48f21`
 }
 
-export const getTrending = async (page) => {
+export const getTrending = async (page = 1) => {
     const url = `${getUrl(trendingPath)}&page=${page}`;
     const res = await (await fetch(url)).json();
     

@@ -16,9 +16,9 @@ export const Home = () => {
     useEffect(() => {
         const fetchMovies = async () => {
             if (!query) {
-                const res = await getTrending(page)
-                setMovies(res.results);
-                setPageCount(res.total_pages);
+                const {results, total_pages} = await getTrending(page)
+                setMovies(results);
+                setPageCount(total_pages);
                 return;
             }
             
