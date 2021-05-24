@@ -26,14 +26,14 @@ const AppNavbar = () => {
               <Nav.Link as={Link} to='/'>
                 Trending
               </Nav.Link>
-              <Nav.Link as={Link} to='/'>
-                Watchlist
+              <Nav.Link as={Link} to='/watchlist'>
+                Your Watchlist
               </Nav.Link>
-              {/* if user is logged in show saved books and logout */}
+              {/* if user is logged in show watchlist and logout */}
               {Auth.loggedIn() ? (
                 <>
                   <Nav.Link as={Link} to='/watchlist'>
-                    See Your Movies
+                    See Your Saved Movies
                   </Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
