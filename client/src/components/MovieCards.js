@@ -3,8 +3,14 @@ import { Link } from "react-router-dom";
 import { BookmarkHeart, BookmarkHeartFill } from 'react-bootstrap-icons';
 import { QUERY_ME } from '../utils/queries';
 import { useQuery, useMutation } from '@apollo/react-hooks';
+import SaveMovie from '../utils/SaveMovie';
+import Auth from '../utils/auth'
+import {useState} from 'react';
+import {saveMovieIds, SavedMovieIds} from '../utils/localStorage';
 
 export const MovieCards = ({ movies }) => {
+    const [savedMovieIds, setSavedMovieIds] = useState(SavedMovieIds());
+
     const { loading, data } = useQuery(QUERY_ME);
 
     if (!movies || movies.length <= 0) {
@@ -22,9 +28,15 @@ export const MovieCards = ({ movies }) => {
                                 <Card.Img variant="top" key={movie.id} src={"https://image.tmdb.org/t/p/w500" + movie.poster_path} />
                                 <Card.Body>
                                     <Card.Title>{movie.title}</Card.Title>
-                                    <BookmarkHeart size="24"></BookmarkHeart>
+                                    {Auth.loggedIn() && (
+                                    <BookmarkHeart size="24" disabled={savedMovieIds?.some((savedMovieId) => 
+                                    savedMovieId === movie.movieId)}
+                                    onClick={() => SaveMovie(movie.movieId)}>
+                                        {savedMovieIds?.some((savedMovieId) => savedMovieId === movie.movieId)
+                                        ? 'Movie already saved'
+                                        : 'Save movie'}
+                                    </BookmarkHeart>)}
                                 </Card.Body>
-
                             </Card>
                         </Link>
                     </Col>

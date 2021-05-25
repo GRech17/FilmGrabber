@@ -11,8 +11,7 @@ export const Home = () => {
     const [query, setQuery] = useState('');
     const [pageCount, setPageCount] = useState(0);
     const [page, setPage] = useState(1);
-    
-    
+  
     useEffect(() => {
         const fetchMovies = async () => {
             if (!query) {
@@ -29,7 +28,7 @@ export const Home = () => {
 
         fetchMovies();
     }, [query, page, setQuery, setPage, setMovies, setPageCount]);
-    
+
     // Debounce change event & set query state
     const onSearchChange = debounce(async (value) => {
         setQuery(value);
@@ -56,5 +55,7 @@ export const Home = () => {
                 <CustomPagination page={page} pageCount={pageCount} setPage={setPage} />
             </Container>
         </>
-    )
-}
+    );
+};
+
+export default Home;
