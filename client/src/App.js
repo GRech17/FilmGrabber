@@ -6,6 +6,7 @@ import ApolloClient from 'apollo-boost';
 import {Trending} from './pages/Trending';
 import {Movie} from './pages/Movie';
 import Watchlist from './pages/Watchlist';
+import { Home } from './pages/Home';
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -27,7 +28,8 @@ function App() {
         <>
         <Navbar />
           <Switch>
-            <Route exact path="/" component={Trending} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/trending" component={Trending} />
             <Route exact path='/watchlist' component={Watchlist} />
             <Route exact path="/movies/:id" component={Movie} />
 

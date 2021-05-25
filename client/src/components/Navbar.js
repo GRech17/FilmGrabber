@@ -23,7 +23,7 @@ const AppNavbar = () => {
               <Nav.Link as={Link} to='/'>
                 Search For Movie
               </Nav.Link>
-              <Nav.Link as={Link} to='/'>
+              <Nav.Link as={Link} to='/trending'>
                 Trending
               </Nav.Link>
               <Nav.Link as={Link} to='/watchlist'>

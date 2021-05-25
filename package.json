@@ -5,7 +5,8 @@
   "main": "server/server.js",
   "dependencies": {
     "graphql": "^15.5.0",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "mongoose": "^5.12.10"
   },
   "devDependencies": {
     "concurrently": "^6.1.0"
