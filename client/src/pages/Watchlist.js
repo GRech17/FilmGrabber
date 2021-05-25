@@ -66,7 +66,7 @@ const SavedMovies = () => {
                         //         onClick={() => handleDeleteMovie(movie.movieId)}>Remove movie</Button>
                         //     </Card.body>
                         // </Card>
-                        <MovieCards movies={movies}></MovieCards>  
+                        <MovieCards movies={movie}></MovieCards>  
                     );
                 })}
             </CardColumns>
