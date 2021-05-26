@@ -21,7 +21,7 @@ export const getMovie = async (id) => {
     const path = movieDetailPath + id;
     const url = getUrl(path);
 
-    const movie = (await fetch(url)).json();
+    const movie = await (await fetch(url)).json();
 
     return {...movie, id: `${movie.id}`}
 };
