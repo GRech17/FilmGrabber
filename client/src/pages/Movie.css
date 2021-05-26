@@ -11,7 +11,7 @@
 }
 
 .card {
-    width: 100%;
+    width: 90%;
     display: inline-block;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -45,11 +45,17 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h3 {
+h3, h1 {
     text-align: center;
     padding-top: 1rem;
     font-weight: bold;
     font-size: 2.2rem;
+}
+
+h6 {
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold;
 }
 
 p {
@@ -58,3 +64,20 @@ p {
     font-weight: bold;
 }
 
+.nav-link {
+    display: left;
+}
+
+
+@media screen and (max-width: 980px) {
+    .movie-card.card {
+        justify-content: center;
+        width: 60%
+    }
+
+    .overview {
+        justify-content: center;
+        padding: 3rem 1rem;
+        width: fit-content;
+    }
+}
