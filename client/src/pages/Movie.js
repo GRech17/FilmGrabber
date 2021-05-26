@@ -33,10 +33,10 @@ export const Movie = () => {
             <div className="overview">
                 <p id="overview-text">{movie.overview}</p>
                 <p><br></br></p>
-                <p class='info'>Release Date: {movie.release_date}</p>
-                <p class='info'>Revenue: ${movie.revenue}</p>
-                <p class='info'>Popularity: {movie.popularity}</p>
-                <p class='info'>Runtime: {movie.runtime} minutes</p>
+                <p className='info'>Release Date: {movie.release_date}</p>
+                <p className='info'>Revenue: ${movie.revenue}</p>
+                <p className='info'>Popularity: {movie.popularity}</p>
+                <p className='info'>Runtime: {movie.runtime} minutes</p>
             </div>
         </div>
     </>)

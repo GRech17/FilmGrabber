@@ -4,9 +4,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server/server.js",
   "dependencies": {
-    "graphql": "^15.5.0",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.12.10"
+    "if-env": "^1.0.4"
   },
   "devDependencies": {
     "concurrently": "^6.1.0"
