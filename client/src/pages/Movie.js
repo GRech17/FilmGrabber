@@ -22,15 +22,15 @@ export const Movie = () => {
 
     return (<>
         <h3>{movie.title}</h3>
-        <div class="float-container">
-            <Card style={{ width: "30%", marginLeft: "4rem", marginRight: "4rem" }} class="movie-card">
-                <Card.Img variant="top" key={movie.id} src={"https://image.tmdb.org/t/p/w500" + movie.poster_path} />
+        <div className="float-container">
+            <Card style={{ width: "30%", marginLeft: "4rem", marginRight: "4rem" }} className="movie-card">
+                <Card.Img variant="top" src={"https://image.tmdb.org/t/p/w500" + movie.poster_path} />
             <Card.Body>
                 <Card.Title>{movie.title}</Card.Title>
             </Card.Body>
 
             </Card>
-            <div class="overview">
+            <div className="overview">
                 <p id="overview-text">{movie.overview}</p>
                 <p><br></br></p>
                 <p>Release Date: {movie.release_date}</p>
