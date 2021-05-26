@@ -11,6 +11,8 @@ const getUrl = (path) => {
 export const getTrending = async (page = 1) => {
     const url = `${getUrl(trendingPath)}&page=${page}`;
     const res = await (await fetch(url)).json();
+
+    mapResultsIds(res);
     
     return res;
 };
@@ -19,13 +21,21 @@ export const getMovie = async (id) => {
     const path = movieDetailPath + id;
     const url = getUrl(path);
 
-    return (await fetch(url)).json();
+    const movie = await (await fetch(url)).json();
+
+    return {...movie, id: `${movie.id}`}
 };
 
 export const searchMovies = async (query, page) => {
     const url = `${getUrl(movieSearchPath)}&query=${query}&page=${page}`;
 
     const res = await (await fetch(url)).json();
-    
+
+    mapResultsIds(res);
+
     return res;
 };
+
+export const mapResultsIds = (res) => {
+    res.results = res.results.map((movie) => ({...movie, id: `${movie.id}`}));
+}

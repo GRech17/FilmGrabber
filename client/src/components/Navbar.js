@@ -26,7 +26,7 @@ const AppNavbar = () => {
               <Nav.Link as={Link} to='/trending'>
                 Trending
               </Nav.Link>
-              <Nav.Link as={Link} to='/'>
+              <Nav.Link as={Link} to='/watchlist'>
                 Watchlist
               </Nav.Link>
               {/* if user is logged in show saved books and logout */}
