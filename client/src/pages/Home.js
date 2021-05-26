@@ -49,7 +49,7 @@ export const Home = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h3>Home</h3>
+                        <h3>Login to create watchlist</h3>
                     </Col>
                 </Row>
                 
