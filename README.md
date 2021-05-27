@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+<h1 align="center">✌️🤟🙏👋  Film Grabber  ✌️🤟🙏👋</h1>
+<h1 align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![badge](https://img.shields.io/npm/v/npm.svg?logo=javascript)
+![badge](https://img.shields.io/npm/v/npm.svg?logo=npm)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![badge](https://img.shields.io/npm/v/npm.svg?logo=javascript)
 
-## Available Scripts
+</h1>
 
-In the project directory, you can run:
+## Description 
 
-### `npm start`
+  *The what, why, and how:* 
+  
+  🔍 Film Grabber is an application where users can rate movie selections and can add liked movie to their personal list. Some of the information returned from the search includes the movie title, votes, and comments. This will allow users to find their favorite movie to watch, when an user can go to "This or That" page. This application was made to help those movie fanatics pick the right movie at home during COVID-19. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ *Check out the [ExampleREADME.md](https://github.com/GRech17/film-grabber/blob/main/README.md) as an example.*
+  <br />
+ 
+  ## Table of contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ - [Tech Used](#tech-used)
+ - [Questions](#questions)
+ - [Links](#links)
+ - [License](#license) 
+  <br />
 
-### `npm test`
+ ## Tech Used
+ *Steps required to install project and how to get the development environment running:*
+  
+💽💽 Installation is a process of installing the dependencies required. Intialize node package manager and then run the following commands:
+  <br />
+    
+ 1. Node
+ 2. Express
+ 3. MySQL
+ 4. Sequelize
+ 5. Dotenv
+ 6. Handlebars
+ 7. Bcrypt
+ 8. express-session
+ 9. connect-session-sequelize
+  
+  *Demo*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   View a demonstration of the application:
+  <br />
+  
+ <br />
 
-### `npm run build`
+  ![](./picture1.PNG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <br />
+  
+ ![](./picture2.PNG)
+  
+  ## Licence
+  📝📑
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  <br />
+  
+ 
+  ## Contributors
+  💆🏽💆🏻‍♂️👳🏽👳🏽👳🏻‍♀️👨🏾‍🦽👨🏿‍🤝‍👨🏾As I use this for my own projects, i want to contribute to everybody such as students, my friends, and other users. I know this might not be the perfect README for all projects out there. If your vision of a perfect README.md differs greatly from mine, tell me what you think and we open an issue. If you'd like to contribute,  please do pull requests and make changes as you'd like. In this case, you can create a new file README-yourplatform.md and create the perfect boilerplate for that.
+  <br />
+ 
+ 
+  ## Test
+  🥇 *Tests for application and how to run them:*
+ 
+   There is no test information for this application at this time.
+  <br />
+ 
+  ## Questions
+  <br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   *✋For any questions, please contact us with the information below:*
+  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ * Find me on GitHub 1: [Gabriel Reches](https://github.com/GRech17)   
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Find me on GitHub 2: [Juan Chavez](https://github.com/jchavezval)
+ <br />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Find me on GitHub 3: [Jito Chadha](https://github.com/jitochadha1)
+ <br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ * Find me on GitHub 4: [emilychhun](https://github.com/emilychhun)
+ <br />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ * Find me on GitHub 5: [Dave Vebber](https://github.com/davevebber)
+ 
+  <br />
 
-## Learn More
+  ## Repo link: [ReadMe-Repo-Link](https://github.com/GRech17/film-grabber)
+   <br />
+   ## Repo link: [Heroku-Repo-Link](https://movie-thumbs.herokuapp.com/)
+   <br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
