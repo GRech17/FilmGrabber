@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+
 import { Container, Row, Col, Form } from "react-bootstrap";
 import debounce from "lodash-es/debounce";
-
+import "./Home.css";
 import { MovieCards } from "../components/MovieCards";
 import { CustomPagination } from "../components/Pagination";
 import { searchMovies, getTrending } from "../utils/movieRequests";
@@ -37,7 +38,7 @@ export const Home = () => {
     
     return (
         <>
-            <Container>
+            <Container className="displayMovie">
                 <Row>
                     <Col>
                         <h3>Home</h3>
@@ -51,9 +52,12 @@ export const Home = () => {
                         }} />
                     </Col>
                 </Row>
+                <Row>
                 <MovieCards movies={movies}></MovieCards>
+               
                 
                 <CustomPagination page={page} pageCount={pageCount} setPage={setPage} />
+                </Row>
             </Container>
         </>
     )

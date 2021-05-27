@@ -1,60 +1,142 @@
-.float-containter {
-    width: 70%;
-    display: grid;
-    grid-template-columns: 1fr;
-    border-right: 1px solid #000;
-    border-left: 1px solid #000;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 0rem;
-    
-}
 
+.wrapper{
+    background-color: black;
+}
 .card {
+    display: block; 
+    border-color: white;
+     background-color: black;
+}
+#card1{
+    margin-top: 100px;
+}
+
+  .img-card {
     width: 100%;
-    display: inline-block;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-}
+    height:200px;
+  
+    display:block;
+ 
+  }
+  .img-card img{
+    width: 100%;
+    height: 200px;
+    object-fit:cover; 
 
-.card-body {
-    display: grid;
-    align-content: center;
-    align-items: center;
-    grid-template-columns: 1fr auto;
-    gap: 0.5rem;
-}
+  } 
+  .card-content {
+    padding:15px;
+    text-align:center;
+  }
 
-.card-title {
-    margin: 0;
-}
-
-.overview {
-    width: 58%;
-    float: right;
-    padding: 3rem 1rem;
-    padding-right: 6rem;
-    
-}
-
-#overview-text {
-    font-size: 1.4rem;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-h3 {
+  h3 {
     text-align: center;
-    padding-top: 1rem;
+margin-top: 20px;
     font-weight: bold;
     font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #104C92;
+   
 }
 
 p {
     font-size: 1.1rem;
     font-style:normal;
-    font-weight: bold;
+   margin-left: 20px;
+   margin-right: 20px;
+    color: #104C92;
+    text-align: center;
+}
+  
+.body-title{
+    color: tomato;
+    text-align: center;
+    font-weight: bolder;
+    background-color: white;
 }
 
+
+
+
+
+
+@media(max-width: 768px){
+     p  {
+   font-size: 0.9rem;
+  color: wheat;
+  font-weight: lighter;
+  }
+  h3
+  {
+    font-size: 1.2rem;
+   color: wheat;
+   margin-left: 5px;
+   }
+
+.card {
+    width: 100%;
+    
+}
+#card1 {
+    margin-top: 10px;
+    
+}
+h3 {
+    
+    font-size: 15px;
+ 
+}
+
+p {
+    font-size: 15px;
+ 
+    font-weight: lighter;
+}
+#image-title{
+    font-size: 15px;
+   
+    text-align: center;
+}
+
+
+}
+
+@media(max-width: 1024px){
+    
+    p  {
+        font-size: 0.9rem;
+       color: wheat;
+       font-weight: lighter;
+       }
+       h3
+       {
+         font-size: 1.2rem;
+        color: wheat;
+        margin-left: 5px;
+        }
+     
+     .card {
+         width: 100%;
+         
+     }
+     #card1 {
+         margin-top: 10px;
+         
+     }
+     h3 {
+         
+         font-size: 15px;
+      
+     }
+     
+     p {
+         font-size: 15px;
+      
+         font-weight: lighter;
+     }
+     #image-title{
+         font-size: 15px;
+        
+         text-align: center;
+     }
+}
