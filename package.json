@@ -4,7 +4,6 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server/server.js",
   "dependencies": {
-    "graphql": "^15.5.0",
     "if-env": "^1.0.4"
   },
   "devDependencies": {

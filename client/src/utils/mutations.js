@@ -14,7 +14,11 @@ mutation login($email: String!, $password: String!){
 export const ADD_USER = gql`
 mutation ADD_USER($username: String!, $email: String!, $password: String!) {
     addUser(username: $username, email: $email, password: $password) {
+<<<<<<< HEAD
         token
+=======
+        token 
+>>>>>>> fd2074cab5ed35f0f74eb74b32dc42eb7278138d
         user {
             _id
             username
@@ -48,4 +52,4 @@ mutation removeMovie($movieId: ID!) {
             image
         }
     }
-}`;    
+}`;
