@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+
 import { Container, Row, Col, Form } from "react-bootstrap";
 import debounce from "lodash-es/debounce";
 import {useQuery} from '@apollo/react-hooks';
@@ -46,7 +47,7 @@ export const Home = () => {
     
     return (
         <>
-            <Container>
+            <Container className="displayMovie">
                 <Row>
                     <Col>
                         <h3>Login to create watchlist</h3>
@@ -64,6 +65,7 @@ export const Home = () => {
                 <MovieCards movies={movies} savedMovies={userData?.savedMovies} refetch={refetch}></MovieCards>
 
                 <CustomPagination page={page} pageCount={pageCount} setPage={setPage} />
+              
             </Container>
         </>
     )

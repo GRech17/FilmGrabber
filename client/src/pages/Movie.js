@@ -21,23 +21,54 @@ export const Movie = () => {
     }
 
     return (<>
-        <h3>{movie.title}</h3>
-        <div className="float-container">
-            <Card style={{ width: "auto", marginLeft: "4rem", marginRight: "4rem" }} className="movie-card">
-                <Card.Img variant="top" src={"https://image.tmdb.org/t/p/w500" + movie.poster_path} />
-            <Card.Body>
-                <Card.Title>{movie.title}</Card.Title>
+      <section class="wrapper">
+    <div class="container-fostrap">
+        <div>
+            
+           
+        </div>
+        <div className="content">
+            <div className="container">
+                <div className="row">
+                    <div className="col-xs-12 col-sm-4">
+                        <div className="card">
+                        <Card style={{ width: "Auto"}} id="movie-card">
+                <Card.Img className="image" variant="top" key={movie.id} src={"https://image.tmdb.org/t/p/w500" + movie.poster_path} />
+            <Card.Body className="body-title">
+                <Card.Title id="image-title">{movie.title}</Card.Title>
             </Card.Body>
 
             </Card>
-            <div className="overview">
+                           
+                         
+                        </div>
+                    </div>
+                   
+                   
+                    <div className="col-xs-12 col-sm-8">
+                        <div className="card" id="card1">
+                        <h3 className="title">{movie.title}</h3>
                 <p id="overview-text">{movie.overview}</p>
                 <p><br></br></p>
-                <p class='info'>Release Date: {movie.release_date}</p>
-                <p class='info'>Revenue: ${movie.revenue}</p>
-                <p class='info'>Popularity: {movie.popularity}</p>
-                <p class='info'>Runtime: {movie.runtime} minutes</p>
+                <p>Release Date: {movie.release_date}</p>
+                <p>Revenue: ${movie.revenue}</p>
+                <p>Popularity: {movie.popularity}</p>
+                <p>Runtime: {movie.runtime} minutes</p>
+                           
+                            
+                        </div>
+                    </div>
+                
+                </div>
             </div>
         </div>
+    </div>
+    
+</section>
+     
+     
+     
+
+
     </>)
 }

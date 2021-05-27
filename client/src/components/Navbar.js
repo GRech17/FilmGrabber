@@ -13,13 +13,13 @@ const AppNavbar = () => {
   return (
     <>
       <Navbar bg='dark' variant='dark' expand='lg'>
-        <Container fluid>
+        <Container fluid> 
           <Navbar.Brand as={Link} to='/'>
             Movie Grabber
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls='navbar' />
+          <Navbar.Toggle aria-controls='navbar'/>
           <Navbar.Collapse id='navbar'>
-            <Nav className='ml-auto'>
+            <Nav className='Navbar ml-auto'>
               <Nav.Link as={Link} to='/'>
                 Search For Movie
               </Nav.Link>
