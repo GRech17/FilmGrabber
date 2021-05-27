@@ -2,17 +2,22 @@ import { useState, useEffect } from 'react';
 
 import { Container, Row, Col, Form } from "react-bootstrap";
 import debounce from "lodash-es/debounce";
-import "./Home.css";
+import {useQuery} from '@apollo/react-hooks';
+
 import { MovieCards } from "../components/MovieCards";
 import { CustomPagination } from "../components/Pagination";
 import { searchMovies, getTrending } from "../utils/movieRequests";
+import {QUERY_ME} from '../utils/queries';
 
 export const Home = () => {
+    const { loading, data, refetch } = useQuery(QUERY_ME);
+
     const [movies, setMovies] = useState([]);
     const [query, setQuery] = useState('');
     const [pageCount, setPageCount] = useState(0);
     const [page, setPage] = useState(1);
-    
+
+    const userData = data?.me || {};
     
     useEffect(() => {
         const fetchMovies = async () => {
@@ -35,13 +40,17 @@ export const Home = () => {
     const onSearchChange = debounce(async (value) => {
         setQuery(value);
     }, 300);
+
+    if (loading) {
+        return <div>Loading...</div>
+    }
     
     return (
         <>
             <Container className="displayMovie">
                 <Row>
                     <Col>
-                        <h3>Home</h3>
+                        <h3>Login to create watchlist</h3>
                     </Col>
                 </Row>
                 
@@ -52,12 +61,11 @@ export const Home = () => {
                         }} />
                     </Col>
                 </Row>
-                <Row>
-                <MovieCards movies={movies}></MovieCards>
-               
-                
+
+                <MovieCards movies={movies} savedMovies={userData?.savedMovies} refetch={refetch}></MovieCards>
+
                 <CustomPagination page={page} pageCount={pageCount} setPage={setPage} />
-                </Row>
+              
             </Container>
         </>
     )

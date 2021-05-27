@@ -1,47 +1,29 @@
 import React from 'react';
-import { Jumbotron, Container, CardColumns, Card, Button} from 'react-bootstrap';
-import {useQuery, useMutation} from '@apollo/react-hooks';
+import { Jumbotron, Container, CardColumns } from 'react-bootstrap';
+import {useQuery} from '@apollo/react-hooks';
+import last from "lodash-es/last";
+
 import {QUERY_ME} from '../utils/queries';
-import {REMOVE_MOVIE} from '../utils/mutations';
-import Auth from '../utils/auth';
-import {removeMovieId} from '../utils/localStorage';
 import { MovieCards } from "../components/MovieCards";
 
-const SavedMovies = () => {
-    const {loading, data} = useQuery(QUERY_ME);
-    const [removeMovie, {error}] = useMutation(REMOVE_MOVIE);
+const Watchlist = () => {
+    const { loading, data, refetch } = useQuery(QUERY_ME);
 
     const userData = data?.me || {};
-
-    // use this to determine if `useEffect()` hook needs to run again
-    const userDataLength = Object.keys(userData).length;
-
-    // create function that accepts the movie's mongo _id value as param and deletes the movie from the database
-    const handleDeleteMovie = async (movieId) => {
-        const token = Auth.loggedIn() ? Auth.getToken() : null;
-    
-    if (!token) {
-        return false;
-    }
-
-    try {
-        const {data} = await removeMovie({
-            variables: {movieId}, 
-        });
-
-        removeMovieId(movieId);
-        } catch (err) {
-            console.error(err);
-        }
-    };
 
     if (loading) {
         return <h2>LOADING...</h2>;
     }
 
+    const mappedMovies = userData?.savedMovies?.map(movie => ({
+        id: movie.movieId,
+        title: movie.title,
+        poster_path: '/' + last(movie.image.split('/'))
+    }))
+
     return (
         <>
-        <Jumbotron fluid classname='text-light bg-dark'>
+        <Jumbotron fluid className='text-light bg-dark'>
             <Container>
                 <h1>Viewing {userData.username}'s saved movies</h1>
             </Container>
@@ -54,21 +36,7 @@ const SavedMovies = () => {
                 : 'You have no saved movies!'}
             </h2>
             <CardColumns>
-                {userData.savedMovies?.map((movie) => {
-                    return (<></>
-                        // <Card key={movie.movieId} border='dark'>
-                        //     {movie.image ? (
-                        //         <Card.Img src={movie.image} alt={`The poster for ${movie.title}`} varient='top' />
-                        //     ) : null}
-                        //     <Card.body>
-                        //         <Card.Title>{movie.title}</Card.Title>
-                        //         <Button className='btn-block btn-danger'
-                        //         onClick={() => handleDeleteMovie(movie.movieId)}>Remove movie</Button>
-                        //     </Card.body>
-                        // </Card>
-                        // <MovieCards movies={movies}></MovieCards>  
-                    );
-                })}
+                <MovieCards movies={mappedMovies} savedMovies={userData?.savedMovies} refetch={refetch}></MovieCards>
             </CardColumns>
             
         </Container>
@@ -76,4 +44,4 @@ const SavedMovies = () => {
     );
 };
 
-export default SavedMovies;    
+export default Watchlist;    

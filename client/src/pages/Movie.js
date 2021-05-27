@@ -68,37 +68,7 @@ export const Movie = () => {
      
      
      
-     
-     
-     
-     
-     
-     
-     
-     
-      {/* <div>
-        <div className="movie-text">
-        <div className="float-container">
-            <Card style={{ width: "Auto"}} id="movie-card">
-                <Card.Img className="image" variant="top" key={movie.id} src={"https://image.tmdb.org/t/p/w500" + movie.poster_path} />
-            <Card.Body className="body-title">
-                <Card.Title id="image-title">{movie.title}</Card.Title>
-            </Card.Body>
 
-            </Card>
-              </div>
-            <div className="overview" id="overview">
-                  <h3 className="title">{movie.title}</h3>
-                <p id="overview-text">{movie.overview}</p>
-                <p><br></br></p>
-                <p>Release Date: {movie.release_date}</p>
-                <p>Revenue: ${movie.revenue}</p>
-                <p>Popularity: {movie.popularity}</p>
-                <p>Runtime: {movie.runtime} minutes</p>
-            </div>
-        </div>
-        </div>
-       */}
 
     </>)
 }

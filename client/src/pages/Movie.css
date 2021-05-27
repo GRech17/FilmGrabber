@@ -3,9 +3,15 @@
     background-color: black;
 }
 .card {
-    display: block; 
+    display: inline-block; 
     border-color: white;
-     background-color: black;
+    background-color: black;
+    width: 90%;
+  
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 #card1{
     margin-top: 100px;
@@ -30,13 +36,20 @@
   }
 
   h3 {
+
     text-align: center;
-margin-top: 20px;
+    margin-top: 20px;
     font-weight: bold;
     font-size: 2.2rem;
     margin-bottom: 20px;
     color: #104C92;
    
+}
+
+h6 {
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold;
 }
 
 p {
