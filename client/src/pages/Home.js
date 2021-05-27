@@ -8,6 +8,8 @@ import { MovieCards } from "../components/MovieCards";
 import { CustomPagination } from "../components/Pagination";
 import { searchMovies, getTrending } from "../utils/movieRequests";
 import {QUERY_ME} from '../utils/queries';
+import {LoginMessage} from '../components/LoginMessage';
+import  AuthService  from '../utils/auth.js';
 
 export const Home = () => {
     const { loading, data, refetch } = useQuery(QUERY_ME);
@@ -45,12 +47,14 @@ export const Home = () => {
         return <div>Loading...</div>
     }
     
+    const isLoggedIn = AuthService.loggedIn()
+    
     return (
         <>
             <Container className="displayMovie">
                 <Row>
                     <Col>
-                        <h3>Login to create watchlist</h3>
+                        <LoginMessage isLoggedIn={isLoggedIn}></LoginMessage>
                     </Col>
                 </Row>
                 
