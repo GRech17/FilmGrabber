@@ -66,7 +66,7 @@ export const Home = () => {
                     </Col>
                 </Row>
 
-                <MovieCards movies={movies} savedMovies={userData?.savedMovies} refetch={refetch}></MovieCards>
+                <MovieCards movies={movies} savedMovies={userData?.savedMovies} refetch={refetch} setMovies={setMovies}></MovieCards>
 
                 <CustomPagination page={page} pageCount={pageCount} setPage={setPage} />
               
