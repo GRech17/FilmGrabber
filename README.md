@@ -1,18 +1,12 @@
 <h1 align="center">✌️🤟🙏👋  Film Grabber  ✌️🤟🙏👋</h1>
 <h1 align="center">
-
-![badge](https://img.shields.io/npm/v/npm.svg?logo=javascript)
-![badge](https://img.shields.io/npm/v/npm.svg?logo=npm)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![badge](https://img.shields.io/npm/v/npm.svg?logo=javascript)
 
 </h1>
 
 ## Description 
-
-  *The what, why, and how:* 
   
-  🔍 Film Grabber is an application where users can view trending movies, search for movies, see movie details and create a watchlist of movies they want to see. Some of the information returned from the search includes the movie title, overview, popularity, revenue and release date. This application was made to help those movie fanatics pick the right movie at home during COVID-19. 
+  Film Grabber is an application where users can view trending movies, search for movies, see movie details and create a watchlist of movies they want to see. Some of the information returned from the search includes the movie title, overview, popularity, revenue and release date. This application was made to help those movie fanatics pick the right movie at home during COVID-19. 
 
 <br />
  
@@ -33,29 +27,26 @@
 navigate to desired installation directory and run "git clone https://github.com/GRech17/film-grabber.git".  After that, while in the root directory of the project inside the terminal, run "npm i" to install all node packages needed for the application.
  ## Technology
   
-💽💽 Below is a list of technologies used to build this app.
+Below is a list of technologies used to build this app.
 <br />
     
  1. Node
  2. React
- 3. Apollo-server-express, apollo react hooks, apollo boost
- 4. Express
- 5. GraphQL, graphql-tag
- 6. MongoDB
- 7. If-env
- 8. Bcrypt
- 9. JSON web token, JWT decode
- 10. Mongoose
- 11. Apollo/react hooks
- 12. apollo-boost
- 13. react bootstrap, react bootstrap icons
- 14. Lodash
- 15. React dom
- 16. React router dom
- 17. Workbox (for service worker)
+ 3. React DOM, React Router DOM
+ 4. Apollo-Server-Express, Apollo React Hooks, Apollo Boost
+ 5. Express
+ 6. GraphQL, Graphql-Tag
+ 7. MongoDB
+ 8. If-env
+ 9. Bcrypt
+ 10. JSON web token, JWT decode
+ 11. Mongoose
+ 12. react bootstrap, react bootstrap icons
+ 13. Lodash
+ 14. Workbox (for service worker)
   
 ## Usage
-once installed invoke the application by running "npm start" from the command line of the project's root directory
+once installed with the npm dependencies, invoke the application by running "npm start" from the command line of the project's root directory
 <br />
   
 ## Credits
@@ -75,14 +66,14 @@ none at this time
  
  
 ## Tests
-once the app is started, try creating an account via the signup and then search for a movie and try saving the movie to your watchlist page
+once the app is started, try creating an account via the signup. k Once signed in, then search for a movie and try saving the movie to your watchlist page
 <br />
  
 ## Questions
 Feel free to reach out to us with any questions you have about Film Grabber
   <br />
 
-   *✋please contact us with the information below:*
+   *✋please contact us via Github with the information below:*
   
 
 * Find me on GitHub 1: [Gabriel Reches](https://github.com/GRech17)   
