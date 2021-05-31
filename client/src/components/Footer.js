@@ -16,7 +16,7 @@ function Footer() {
                             <h5 className="white-text">Company Bio</h5>
          <p className="grey-text text-lighten-4" id="footer-text">We are a team of college students working on this project like it's our full time job. 
            Any amount would help support and continue development on this project and is greatly appreciated.</p>
-      Made by <a className="brown-text text-lighten-3" >Project Team Buddies</a>                 
+      Made by <a className="brown-text text-lighten-3" href="https://github.com/GRech17">Project Team Buddies</a>                 
                               
                             </div>
                         </div>
@@ -53,7 +53,7 @@ function Footer() {
                         <div className="col-xs-12 col-sm-12">
                             <div className="card4">
                                     <div className="footer-copyright text-center py-3">© 2021 Copyright:
-                      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+                      <a href="https://github.com/GRech17/film-grabber"> Film-Grabber</a>
                </div>
                               
                             </div>

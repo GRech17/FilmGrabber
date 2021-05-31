@@ -12,90 +12,95 @@
 
   *The what, why, and how:* 
   
-  🔍 Film Grabber is an application where users can rate movie selections and can add liked movie to their personal list. Some of the information returned from the search includes the movie title, votes, and comments. This will allow users to find their favorite movie to watch, when an user can go to "This or That" page. This application was made to help those movie fanatics pick the right movie at home during COVID-19. 
+  🔍 Film Grabber is an application where users can view trending movies, search for movies, see movie details and create a watchlist of movies they want to see. Some of the information returned from the search includes the movie title, overview, popularity, revenue and release date. This application was made to help those movie fanatics pick the right movie at home during COVID-19. 
 
- *Check out the [ExampleREADME.md](https://github.com/GRech17/film-grabber/blob/main/README.md) as an example.*
-  <br />
+<br />
  
   ## Table of contents
 
- - [Tech Used](#tech-used)
- - [Questions](#questions)
- - [Links](#links)
- - [License](#license) 
-  <br />
+- [Description](#description)
+- [Installation](#installation)
+- [Technology](#technology)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Tests](#tests)
+- [Contributing Guide Lines](#contributing)
+- [Questions](#questions)
+<br />
 
- ## Tech Used
- *Steps required to install project and how to get the development environment running:*
+## Installation
+navigate to desired installation directory and run "git clone https://github.com/GRech17/film-grabber.git".  After that, while in the root directory of the project inside the terminal, run "npm i" to install all node packages needed for the application.
+ ## Technology
   
-💽💽 Installation is a process of installing the dependencies required. Intialize node package manager and then run the following commands:
-  <br />
+💽💽 Below is a list of technologies used to build this app.
+<br />
     
  1. Node
- 2. Express
- 3. MySQL
- 4. Sequelize
- 5. Dotenv
- 6. Handlebars
- 7. Bcrypt
- 8. express-session
- 9. connect-session-sequelize
+ 2. React
+ 3. Apollo-server-express, apollo react hooks, apollo boost
+ 4. Express
+ 5. GraphQL, graphql-tag
+ 6. MongoDB
+ 7. If-env
+ 8. Bcrypt
+ 9. JSON web token, JWT decode
+ 10. Mongoose
+ 11. Apollo/react hooks
+ 12. apollo-boost
+ 13. react bootstrap, react bootstrap icons
+ 14. Lodash
+ 15. React dom
+ 16. React router dom
+ 17. Workbox (for service worker)
   
-  *Demo*
+## Usage
+once installed invoke the application by running "npm start" from the command line of the project's root directory
+<br />
+  
+## Credits
+- [GRech17](https://github.com/GRech17)
+- [jchavezval](https://github.com/jchavezval)
+- [emilychhun](https://github.com/emilychhun)
+- [jitochadha1](https://github.com/jitochadha1)
 
-   View a demonstration of the application:
   <br />
-  
- <br />
-
-  ![](./picture1.PNG)
-
-  <br />
-  
- ![](./picture2.PNG)
-  
-  ## Licence
-  📝📑
-  
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  <br />
-  
+## License
+MIT
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<br /> 
+## Contributing Guide Lines
+none at this time
+<br />
  
-  ## Contributors
-  💆🏽💆🏻‍♂️👳🏽👳🏽👳🏻‍♀️👨🏾‍🦽👨🏿‍🤝‍👨🏾As I use this for my own projects, i want to contribute to everybody such as students, my friends, and other users. I know this might not be the perfect README for all projects out there. If your vision of a perfect README.md differs greatly from mine, tell me what you think and we open an issue. If you'd like to contribute,  please do pull requests and make changes as you'd like. In this case, you can create a new file README-yourplatform.md and create the perfect boilerplate for that.
-  <br />
  
+## Tests
+once the app is started, try creating an account via the signup and then search for a movie and try saving the movie to your watchlist page
+<br />
  
-  ## Test
-  🥇 *Tests for application and how to run them:*
- 
-   There is no test information for this application at this time.
-  <br />
- 
-  ## Questions
+## Questions
+Feel free to reach out to us with any questions you have about Film Grabber
   <br />
 
-   *✋For any questions, please contact us with the information below:*
+   *✋please contact us with the information below:*
   
 
- * Find me on GitHub 1: [Gabriel Reches](https://github.com/GRech17)   
-
-
+* Find me on GitHub 1: [Gabriel Reches](https://github.com/GRech17)   
 * Find me on GitHub 2: [Juan Chavez](https://github.com/jchavezval)
- <br />
-
+* Find me on GitHub 4: [emilychhun](https://github.com/emilychhun)
 * Find me on GitHub 3: [Jito Chadha](https://github.com/jitochadha1)
- <br />
 
- * Find me on GitHub 4: [emilychhun](https://github.com/emilychhun)
- <br />
+<br />
 
- * Find me on GitHub 5: [Dave Vebber](https://github.com/davevebber)
- 
+  ## Repo link:
+  https://github.com/GRech17/film-grabber
+  <br />
+  ## Live App: 
+  https://film-grabber.herokuapp.com
   <br />
 
-  ## Repo link: [ReadMe-Repo-Link](https://github.com/GRech17/film-grabber)
-   <br />
-   ## Repo link: [Heroku-Repo-Link](https://movie-thumbs.herokuapp.com/)
-   <br />
+## Screenshots
+<img src="./search-trending.png">
+
+<img src="./watchlist.png">
 

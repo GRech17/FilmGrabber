@@ -50,7 +50,7 @@ body{
 
 }
 #navbar{
-    margin-left: 70rem;
+    flex-grow: 0;
 }
 /***********************TYPED TEXT************************/
 .typed-text{
