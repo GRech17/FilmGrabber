@@ -53,7 +53,7 @@ function Footer() {
                         <div className="col-xs-12 col-sm-12">
                             <div className="card4">
                                     <div className="footer-copyright text-center py-3">© 2021 Copyright:
-                      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+                      <a href="https://github.com/GRech17/film-grabber"> Film-Grabber</a>
                </div>
                               
                             </div>
