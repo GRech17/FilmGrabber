@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="header-wraper">
            <div className="main-info">
-               <h1>Movie Grabber</h1>
+               <h1>Film Grabber</h1>
                <Typed className="typed-text"
                strings={["Jito Chadha", "Gabriel Reches", "Emily Chhun", "Juan Chavez"]}
                typeSpeed={40}
